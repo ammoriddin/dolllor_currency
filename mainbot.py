@@ -2,7 +2,7 @@ import requests
 import logging
 from aiogram import Bot, Dispatcher, executor, types
 
-API_TOKEN = '2118595678:AAH_Xm5C0mkrOT2iHiGuFsYrf9fn3BjePPY'
+API_TOKEN = ''
 
 logging.basicConfig(level=logging.INFO)
 
@@ -21,7 +21,7 @@ async def yordam(message: types.Message):
 
 @dp.message_handler(commands=['dollar'])
 async def kurslar(message: types.Message):
-    API_KEY = 'cc5bf5435756bb4eea3c0f09'
+    API_KEY = ''
     curresy = 'USD'
     url = f'https://v6.exchangerate-api.com/v6/{API_KEY}/pair/{curresy}/UZS'
     r = requests.get(url)
